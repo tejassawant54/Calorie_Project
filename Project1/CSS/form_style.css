@@ -1,0 +1,161 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 445px;
+    height: 50px;
+    background: #29abe1;
+    margin: 0;
+}
+
+#wrapper {
+    position: absolute;
+    top: -30px;
+    left: 34.5%;
+    display: none;
+    z-index: 901;
+}
+
+#closeBtn {
+	position: relative;
+    left: 400px;
+    top: 43px;
+    width: 8%;
+    height: 15%;
+    cursor: pointer;
+}
+
+#regis {
+	position: absolute;
+    top: 360px;
+    left: 46.5%;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 899;
+}
+
+#aboutp {
+	position: relative;
+    left: 47%;
+    width: 8%;
+    font-weight: bold;
+    margin: 0;
+}
+
+#aboutpara {
+	position: relative;
+    left: 22.5%;
+    width: 60%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#titleDiv {
+    position: absolute;
+    top: 30px;
+    left: 41.5%;
+    background: #29abe1;
+    z-index: 900;
+}
+
+#container {
+	border: 1px solid #e2e2e2;
+    background: white;
+    width: 425px;
+    padding: 10px;
+}
+
+.styleFld{
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 200px;
+}
+
+.styleSelect{
+    position: relative;
+    width: 58%;
+    margin: 0 auto;
+    padding: 12px 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+#imageSlider{
+    position:relative;
+    height: 430px;
+    margin-bottom: 0px;
+    padding: 0px 0px 30px 0px;;
+}
+
+.error {
+	
+    color: #d5383c;
+    font-family: 'Raleway',sans-serif;
+}
+
+.bxslider {
+	
+    padding: 0px 5px 5px 5px;
+    margin: 0px;
+}
+
+label.required:after{
+    content: '*';
+    color: red;
+}
+
+/* Button */
+
+.button-small{
+    color: #fff !important;
+    word-spacing: 0.25em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    line-height: 22px;
+    padding: 12px 13px 11px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+.button-small:visited{
+      color: #fff;
+}
+.button-small{
+    padding: 6px 12px 5px;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: none;
+}
+.button-small:hover{
+    cursor: pointer;
+    color: rgba(255,255,255, 0.75);
+    text-decoration: none;
+    -webkit-box-shadow:inset 0 10px 20px rgba(255,255,255, 0.10);
+    -moz-box-shadow: inset 0 10px 20px rgba(255,255,255, 0.10);
+    box-shadow: inset 0 10px 20px rgba(255,255,255, 0.10);
+}
+.button-small:active {
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0, 0.3), inset 0 10px 20px rgba(0,0,0, 0.08);
+    -moz-box-shadow: inset 0 2px 2px rgba(0,0,0, 0.3), inset 0 10px 20px rgba(0,0,0, 0.08);
+    box-shadow: inset 0 2px 2px rgba(0,0,0, 0.3), inset 0 10px 20px rgba(0,0,0, 0.08);
+}
+.rounded3 {
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.blue_dark {
+	background: #29abe1;    
+}

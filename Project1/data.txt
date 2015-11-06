@@ -1,0 +1,242 @@
+[
+        {
+            "activityName": "Racquetball (recreational)",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Cycling (light, <10 mph)",
+            "activityVal": "0.12"
+        },
+        {
+            "activityName": "Kayaking (leisure)",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Cycling (light-moderate, 10-12 mph)",
+            "activityVal": "0.10"
+        },
+        {
+            "activityName": "Dancing (general)",
+            "activityVal": "0.08"
+        },
+        {
+            "activityName": "Cycling (moderate, 12.1-14 mph)",
+            "activityVal": "0.14"
+        },
+        {
+            "activityName": "Golf (walking + bag)",
+            "activityVal": "0.09"
+        },
+        {
+            "activityName": "Cycling (hard, 14.1-16 mph)",
+            "activityVal": "0.18"
+        },
+        {
+            "activityName": "Running (5 mph, 12 min/mile)",
+            "activityVal": "0.12"
+        },
+        {
+            "activityName": "Cycling (v. hard, 16.1-19 mph)",
+            "activityVal": "0.21"
+        },
+        {
+            "activityName": "Running 5.5 mph (11 min/mile)",
+            "activityVal": "0.14"
+        },
+        {
+            "activityName": "Cycling (stationary, 50W)",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Running (6 mph, 10 min/mile)",
+            "activityVal": "0.16"
+        },
+        {
+            "activityName": "Cycling (stationary, 100W)",
+            "activityVal": "0.09"
+        },
+        {
+            "activityName": "Running (6.6 mph, 9 min/mile)",
+            "activityVal": "0.19"
+        },
+        {
+            "activityName": "Cycling (stationary, 150W)",
+            "activityVal": "0.12"
+        },
+        {
+            "activityName": "Running (7.5 mph 8 min/mile)",
+            "activityVal": "0.22"
+        },
+        {
+            "activityName": "Cycling (stationary, 200W)",
+            "activityVal": "0.18"
+        },
+        {
+            "activityName": "Running (8.6 mph, 7 min/mile)",
+            "activityVal": "0.24"
+        },
+        {
+            "activityName": "Cycling (stationary, 250W)",
+            "activityVal": "0.22"
+        },
+        {
+            "activityName": "Running (10 mph, 6 min/mile)",
+            "activityVal": "0.28"
+        },
+        {
+            "activityName": "Calisthenics (push-ups, etc.)",
+            "activityVal": "0.08"
+        },
+        {
+            "activityName": "Chopping Wood",
+            "activityVal": "0.09"
+        },
+        {
+            "activityName": "Circuit Training",
+            "activityVal": "0.14"
+        },
+        {
+            "activityName": "Mowing Lawn (walking, power)",
+            "activityVal": "0.08"
+        },
+        {
+            "activityName": "Weight Training (light)",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Raking Leaves",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Weight Training (hard)",
+            "activityVal": "0.10"
+        },
+        {
+            "activityName": "Trimming (manual)",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Rowing (50W)",
+            "activityVal": "0.06"
+        },
+        {
+            "activityName": "Weeding/Gardening",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Rowing (100W)",
+            "activityVal": "0.12"
+        },
+        {
+            "activityName": "Sitting Activities (very light)",
+            "activityVal": "0.03"
+        },
+        {
+            "activityName": "Rowing (150W)",
+            "activityVal": "0.15"
+        },
+        {
+            "activityName": "Standing (very light)",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Rowing (200W)",
+            "activityVal": "0.21"
+        },
+        {
+            "activityName": "Walking (3 mph 20 min/mile)",
+            "activityVal": "0.06"
+        },
+        {
+            "activityName": "Stretching/Yoga",
+            "activityVal": "0.06"
+        },
+        {
+            "activityName": "Walking (3.5 mph, 17 min/mile)",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Aerobics (low impact)",
+            "activityVal": "0.09"
+        },
+        {
+            "activityName": "Walking (4 mph 15 min/mile)",
+            "activityVal": "0.08"
+        },
+        {
+            "activityName": "Aerobics (high impact)",
+            "activityVal": "0.12"
+        },
+        {
+            "activityName": "Sweeping",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Volleyball (recreational)",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Washing Car",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Bathing/Dressing",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "House Cleaning",
+            "activityVal": "0.06"
+        },
+        {
+            "activityName": "Sexual Activity (kissing, hugs)",
+            "activityVal": "0.02"
+        },
+        {
+            "activityName": "Washing Dishes/Ironing",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Sexual Activity (active)",
+            "activityVal": "0.03"
+        },
+        {
+            "activityName": "Cooking Food",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Swimming (light)",
+            "activityVal": "0.10"
+        },
+        {
+            "activityName": "Carrying Groceries (light)",
+            "activityVal": "0.07"
+        },
+        {
+            "activityName": "Swimming (moderate)",
+            "activityVal": "0.14"
+        },
+        {
+            "activityName": "Laundry Folding/Making Bed",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Sleeping",
+            "activityVal": "0.02"
+        },
+        {
+            "activityName": "Playing with Kids (sitting)",
+            "activityVal": "0.04"
+        },
+        {
+            "activityName": "Child Care (sitting)",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Playing with Kids (standing)",
+            "activityVal": "0.05"
+        },
+        {
+            "activityName": "Child Care (standing)",
+            "activityVal": "0.06"
+        }
+    ]

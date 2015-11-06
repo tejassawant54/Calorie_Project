@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/browserDetect.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="CSS/form_style.css" />
+    </head>
+    <body>
+        
+    <!-- Image Div -->    
+    <!-- References for Image: https://www.google.com/search?q=calorie+hd+images&biw=1280&bih=616&tbm=isch&tbo=u&source=univ&sa=X&ved=0CBwQsARqFQoTCMy19JOUtsgCFUuggAodH3oDTQ#tbm=isch&q=healthy+body+healthy+mind+&imgrc=_ -->    
+        
+    <div id="imageSlider">
+        <div id="titleDiv">
+            <h1 style="margin:15px;color:white;">CALORIE LAB</h1>
+        </div>
+        <input id="regis" class="button-small rounded3 blue_dark" type="submit" value="REGISTER USER" onclick="showDiv();" />
+        <img src="images/3.jpg" style="width: 100%;height: 100%;"/>
+    </div> 
+        
+    <!-- Information -->    
+        
+    <div id="about">
+        <p id="aboutp">CALORIE TIP</p><br>
+        <p id="aboutpara" >" 1 POUND OF FAT IS 3500 CALORIES IF YOU WANT TO LOSE 1LB. A WEEK<br>THEN BURN 500 CALORIES PER DAY MORE THAN YOU EAT. IT'S SCIENCE NOT MAGIC "</p>
+    </div>
+        
+    <!-- Form -->    
+        
+    <div id="wrapper" style="opacity:0;">
+        <div id="closeBtn">
+                <img src="images/close_button.png" />
+        </div>
+        <h3>REGISTER USER</h3>
+        <div id="container">
+            <form id="register_form" action="main.html" onsubmit="return Validate();" method="post">
+                <label class="required">First Name: </label>
+                <input class="styleFld" type="text" id="fname" placeholder="James" required /><br><br>
+                    
+                <label class="required">Last Name: </label>
+                <input class="styleFld" type="text" id="lname" placeholder="Bond" required /><br><br>
+                    
+                <label class="required">Email: </label>
+                <input class="styleFld" type="email" id="email" placeholder="bond007@gmail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required /><br><br>
+                    
+                <label class="required">Phone Number: </label>
+                <input class="styleFld" type="text" id="phone" placeholder="###-###-####" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" required /><br><br>
+                <label class="required">Select Weight: </label>
+                <input type="radio" name="wt" value="lbs" checked >LBS
+                <input type="radio" name="wt" value="kg">KG
+                <span id="wtspan" class="error"></span><br><br>
+                    
+                <label class="required">Weight: </label>
+                <input class="styleFld" type="text" id="weight" placeholder="123 or 65" pattern="^[0-9]{3}|[0-9]{2}$" required /><br><br>
+                    
+                <label class="required">Height: </label>
+                <input class="styleFld" type="text" id="height" placeholder="Centimeters/Inches" pattern="^[0-9]{3}|[0-9]{2}$" required /><br><br>
+                    
+                <label class="required">Gender: </label>
+                <input type="radio" name="gender" value="male" checked >Male
+                <input type="radio" name="gender" value="female">Female
+                <span id="gndr" class="error"></span><br><br>
+                    
+                <label class="required">How much exercise do you do daily? </label>
+                <select class="styleSelect" id="dailyAct">
+                    <option value="default">---- Please select ----</option>
+                    <option value="none">None (Stay in bed all day)</option>
+                    <option value="sedentary">Sedentariness (Very little)</option>
+                    <option value="light">Light (1 to 3 days per week)</option>
+                    <option value="moderate">Moderate (3 to 5 days per week)</option>
+                    <option value="hard">Hard (6 days per week)</option>
+                    <option value="nonstop">Non-stop (You are Energizer Bunny.)</option>
+                </select>
+                <span id="dailySpan" class="error"></span><br><br>
+                    
+                <center><button id="btn" class="button-small rounded3 blue_dark" type="submit">REGISTER</button></center>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <center><p>Copyright &copy; 2015 Tejas Sawant </p></center>
+        
+    <!-- Scripts -->
+        
+    <script>
+            
+        var clsBtn = document.getElementById("closeBtn");
+            
+            /*----------------------------------------------------------------------------
+                Browser Detection
+            ------------------------------------------------------------------------------*/
+            
+             // Safari Detection
+            
+            console.log(BrowserDetect.browser);
+            if(BrowserDetect.browser == "Safari"){
+                alert("Please Change Your Browser to Chorme, Firefox or IE9 and above !!!");
+                window.open("https://www.google.com/chrome/browser/desktop/index.html","_self");
+            }
+            
+            
+            // Internet Explorer
+            // References: https://msdn.microsoft.com/en-us/library/cc817582.aspx
+            
+            checkIEVersion();
+            
+            function getInternetExplorerVersion()
+            // Returns the version of Windows Internet Explorer or a -1
+            // (indicating the use of another browser).
+            {
+                //console.log("App Name: "+navigator.appName);
+                //console.log("User Agent: "+navigator.userAgent);
+                
+                var rv = -1; // Return value assumes failure.
+                if (navigator.appName == 'Netscape')
+                {
+                    var ua = navigator.userAgent;
+                    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");  
+                    if (re.exec(ua) != null)                                // Checks for matched string in user agent        
+                        rv = parseFloat( RegExp.$1 );
+                }
+                return rv;
+            }
+            function checkIEVersion()
+            {
+                var ver = getInternetExplorerVersion();
+                console.log("ver: "+ver);
+                if ( ver> -1 )
+                {
+                    if ( ver == 8.0 ){              //compare IE version and redirect to chrome download page
+                        alert("You're using Windows Internet Explorer 8.");
+                        window.open("https://www.google.com/chrome/browser/desktop/index.html","_self");
+                    }else if ( ver == 7.0 ){
+                        alert("You're using Windows Internet Explorer 7.");
+                        window.open("https://www.google.com/chrome/browser/desktop/index.html","_self");
+                    }else if ( ver == 6.0 ){
+                        alert("You're using Windows Internet Explorer 6.");
+                        window.open("https://www.google.com/chrome/browser/desktop/index.html","_self");
+                    }else
+                        msg = "You should upgrade your copy of Windows Internet Explorer";
+                }
+                //alert( msg );
+            }
+            
+            
+            
+            /*----------------------------------------------------------------------------
+                showDiv: Shows the Register form on click
+            ------------------------------------------------------------------------------*/
+            
+            function showDiv(){
+            
+                var mainDiv = document.getElementById("wrapper"),
+                    aboutDiv = document.getElementById("about");
+                
+                mainDiv.style.display = "block";
+                animate(mainDiv);
+                
+                function animate(element){
+
+                    var opacity = parseFloat(element.style.opacity),            //convert string to muber format
+                        timer = "";
+    
+                    opacity += 0.1;                                //increment opacity
+                    var newopa = opacity.toString();
+                    element.style.opacity = newopa;                //append new opacity to element
+    
+                    if(opacity < 1){                              //check perform to come out of settimeout   
+                       timer = setTimeout(function(){animate(element)},50);
+                    }else{
+                       clearTimeout(timer);
+                    }    
+                }   
+            }
+            
+            // close button functionality  
+            
+            clsBtn.addEventListener("click",function(){
+                var mainDiv = document.getElementById("wrapper");
+                mainDiv.style.display = "none";
+                mainDiv.style.opacity = 0;
+                
+            });
+            
+        </script>
+        <script type="text/javascript" src="JS/validation.js"></script>
+        <script type="text/javascript" src="JS/cookies.js"></script>
+        
+    </body>
+</html>
